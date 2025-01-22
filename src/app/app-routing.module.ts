@@ -1,14 +1,28 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import {welcomeGuardGuard} from './welcome-guard.guard'
 
 const routes: Routes = [
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    path: 'inicial-page',
+    loadChildren: () => import('./inicial-page/inicial-page.module').then( m => m.InicialPagePageModule),
+    canActivate:[welcomeGuardGuard]
+  },
+  {
+    path: 'dashboard',
+    loadChildren: () => import('./dashboard/dashboard.module').then( m => m.DashboardPageModule)
+  },
+  {
+    path: 'settings',
+    loadChildren: () => import('./settings/settings.module').then( m => m.SettingsPageModule)
+  },
+  {
+    path: 'play-deck',
+    loadChildren: () => import('./play-deck/play-deck.module').then( m => m.PlayDeckPageModule)
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'inicial-page',
     pathMatch: 'full'
   },
 ];

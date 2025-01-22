@@ -1,0 +1,40 @@
+.logo {
+    max-height: 50px;
+  }
+
+.blogo {
+    max-height: 400px;
+  }
+
+
+.fonts{
+    font-size: 55px;
+    font-family: 'CustomFontName', sans-serif; /* Add a fallback font */
+    color: rgb(191, 113, 223);
+ 
+}
+
+.fonts-smal{
+    font-size: 50px;
+}
+
+  ion-content.content {
+    --background: #5ce1e6;
+
+  }
+
+  .centered-container {
+    display: flex;
+    align-items: center; /* Vertical alignment */
+    justify-content: center; /* Horizontal alignment */
+   
+  }
+
+
+
+@media (min-width: 768px) {
+ .fonts{
+    font-size: 85px;
+ }
+  }
+  
