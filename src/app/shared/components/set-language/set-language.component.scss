@@ -1,0 +1,106 @@
+.language-label {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* space between image and text */
+  color: Black
+}
+
+
+.language-label-selected {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* space between image and text */
+  color: white
+}
+
+
+
+.image-avatar {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+
+ion-radio-group.language-section {
+  height: 50vh; 
+  overflow-y: auto; 
+  display: block; 
+  width: 100%;
+  margin-top:5%;
+  ;
+}
+
+ion-radio-group.language-section::-webkit-scrollbar {
+  width: 4px; /* Thin scrollbar */
+}
+
+ion-radio-group.language-section::-webkit-scrollbar-track {
+  background: transparent; /* Optional: track background */
+}
+
+ion-radio-group.language-section::-webkit-scrollbar-thumb {
+  background-color: #8d44ad00; /* Your desired scrollbar color */
+  border-radius: 10px;
+}
+
+ion-radio-group.language-section {
+  scrollbar-width: thin;             /* For Firefox */
+  scrollbar-color: #8d44ad00 transparent; /* thumb and track color */
+}
+
+
+ion-item.lang-custom-item {
+  --background: rgba(255, 0, 0, 0);
+  border:1.5px solid #8d44adb9;
+  border-radius: 10px;
+  --padding-top: 10px;
+  --padding-bottom: 10px;
+  margin-bottom: 15px;
+  height: 75px;
+}
+
+ion-item.lang-custom-item ion-label {
+  color: rgb(14, 0, 0);
+}
+
+
+ion-item.lang-custom-item-selected {
+  --background: rgb(191, 113, 223);;
+  border:1.5px solid white;
+  border-radius: 10px;
+  --padding-top: 10px;
+  --padding-bottom: 10px;
+  margin-bottom: 15px;
+  height: 75px;
+  color: white;
+}
+
+
+
+
+
+
+ion-col.size-title {
+  max-width: 500px !important; /* Override Ionic's max-width */
+  width: 100% !important; /* Ensure it takes full width up to max-width */
+  padding-left: 100px !important;
+  padding-right: 100px !important;
+  overflow: hidden; /* Prevent overflow */
+  flex: 0 0 500px !important; /* Override Ionic's flex calculation */
+}
+
+
+ion-col.size-content {
+  max-width: 800px !important; /* Override Ionic's max-width */
+  width: 100% !important; /* Ensure it takes full width up to max-width */
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+  overflow: hidden; /* Prevent overflow */
+  flex: 0 0 500px !important; /* Override Ionic's flex calculation */
+}
+
+
+
+
+

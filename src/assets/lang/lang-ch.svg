@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Gruppe_7142" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 65.8 65.8" style="enable-background:new 0 0 65.8 65.8;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_00000083089292139486351900000017272985239580188598_);fill:#FFFFFF;}
+	.st1{clip-path:url(#SVGID_00000119087874687379221010000014417977223881530007_);fill:#D80027;}
+	.st2{clip-path:url(#SVGID_00000119087874687379221010000014417977223881530007_);}
+	.st3{fill:#FFDA44;}
+</style>
+<g>
+	<g>
+		<g>
+			<g>
+				<defs>
+					<circle id="SVGID_1_" cx="32.9" cy="32.9" r="32.9"/>
+				</defs>
+				<clipPath id="SVGID_00000060720401992046167840000012170936718909933469_">
+					<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+				</clipPath>
+				
+					<circle style="clip-path:url(#SVGID_00000060720401992046167840000012170936718909933469_);fill:#FFFFFF;" cx="32.9" cy="33.2" r="26"/>
+			</g>
+			<g>
+				<defs>
+					<circle id="SVGID_00000073686746853040154460000004361079226154516108_" cx="32.9" cy="32.9" r="32.9"/>
+				</defs>
+				<clipPath id="SVGID_00000009591892205233896570000016001132492332520359_">
+					<use xlink:href="#SVGID_00000073686746853040154460000004361079226154516108_"  style="overflow:visible;"/>
+				</clipPath>
+			</g>
+			<g>
+				<defs>
+					<circle id="SVGID_00000136387033601909971620000010051343989071221139_" cx="32.9" cy="32.9" r="32.9"/>
+				</defs>
+				<clipPath id="SVGID_00000065777546265541753990000011868601329982450110_">
+					<use xlink:href="#SVGID_00000136387033601909971620000010051343989071221139_"  style="overflow:visible;"/>
+				</clipPath>
+			</g>
+			<g>
+				<defs>
+					<circle id="SVGID_00000023241622678061876460000004225868964963311243_" cx="32.9" cy="32.9" r="32.9"/>
+				</defs>
+				<clipPath id="SVGID_00000121959257856585085330000013169437427500094615_">
+					<use xlink:href="#SVGID_00000023241622678061876460000004225868964963311243_"  style="overflow:visible;"/>
+				</clipPath>
+				
+					<ellipse style="clip-path:url(#SVGID_00000121959257856585085330000013169437427500094615_);fill:#D80027;" cx="32.9" cy="34.6" rx="36.9" ry="37"/>
+				<g style="clip-path:url(#SVGID_00000121959257856585085330000013169437427500094615_);">
+					<polygon class="st3" points="24.7,19.2 27.9,29 38.2,29 29.9,35.1 33,44.9 24.7,38.8 16.3,44.9 19.5,35.1 11.2,29 21.5,29 
+											"/>
+					<polygon class="st3" points="44.8,51.9 41.7,49.6 38.5,51.9 39.7,48.2 36.6,45.9 40.5,45.9 41.7,42.2 42.9,45.9 46.7,45.9 
+						43.6,48.2 					"/>
+					<polygon class="st3" points="53,40.6 49.1,40.6 47.9,44.3 46.7,40.6 42.8,40.6 46,38.3 44.8,34.6 47.9,36.9 51,34.6 49.8,38.3 
+											"/>
+					<polygon class="st3" points="53,26.7 49.8,29 51,32.7 47.9,30.4 44.8,32.7 46,29 42.8,26.7 46.7,26.7 47.9,23 49.1,26.7 					
+						"/>
+					<polygon class="st3" points="44.8,15.4 43.6,19.1 46.7,21.4 42.9,21.4 41.7,25.1 40.5,21.4 36.6,21.4 39.7,19.1 38.5,15.4 
+						41.7,17.7 					"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

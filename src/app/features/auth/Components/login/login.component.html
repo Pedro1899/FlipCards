@@ -1,0 +1,28 @@
+<ion-grid class="center-div"
+[@fadeIn]="fadeState" 
+>
+  <ion-row class="ion-align-items-center">
+    <ion-col size="12" size-xs="12" size-sm="12" size-md="12" size-lg="12" class="fonts-sub ion-text-center">
+      {{"loginTitle"| translate}}
+    </ion-col>
+    <!--set user name     
+    -->
+    <ion-col size="12" size-xs="12" size-sm="12" size-md="12" size-lg="12" class="center-div ion-margin-top">
+
+
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <ion-input class="authInput  ion-margin-bottom" [placeholder]="'auth-email' | translate" type="email"
+          formControlName="email" aria-label="email">
+        </ion-input>
+        <ion-input class="authInput  ion-margin-bottom" [placeholder]="'auth-password' | translate" type="password"
+          formControlName="password" aria-label="password">
+        </ion-input>
+        <ion-button expand="block" type="submit" class="auth-button">{{"auth-login" | translate}}</ion-button>
+      </form>
+
+    </ion-col>
+    <ion-col size="12" class="center-div fonts-sub-small" (click)="register()">
+      {{"goRegister" | translate}}
+    </ion-col>
+  </ion-row>
+</ion-grid>

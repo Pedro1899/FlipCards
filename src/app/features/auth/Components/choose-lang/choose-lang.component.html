@@ -1,0 +1,16 @@
+
+
+<div *ngIf="step=='mainLang'"
+class="m-20" 
+[@fadeIn]="fadeState" 
+>
+<app-set-language [language]="mainLang" [title]="(user$ | async)  + ('myLanguage' | translate )" (setLangage)="onMainLangChange($event)" ></app-set-language>
+</div>
+
+<div class="m-20" 
+[@fadeIn]="fadeState" 
+*ngIf="step=='toLearnLang'"
+>
+<app-set-language [language]="toLearnLang" title="Select language to learn" (setLangage)="ontoLearnLangChange($event)" ></app-set-language>
+</div>
+

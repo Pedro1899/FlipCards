@@ -1,0 +1,19 @@
+.footer-icon{
+font-size: 40px;
+color: rgb(186, 186, 255);
+}
+
+
+.custom-footer ion-toolbar {
+    height: 80px; /* Set desired height (e.g., 80px for a taller footer) */
+    min-height: 80px; /* Ensure it doesn't shrink */
+    --min-height: 80px; /* Override Ionic's default variable */
+    display: flex;
+    align-items: center; /* Vertically center content */
+  }
+  
+  /* Optional: Center content vertically within ion-row */
+  .custom-footer .ion-row {
+    height: 100%; /* Use full height of toolbar */
+    align-items: center; /* Vertically center columns */
+  }

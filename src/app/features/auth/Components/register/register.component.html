@@ -1,0 +1,42 @@
+<ion-grid class="center-div-auth-childs"
+[@fadeIn]="fadeState" 
+>
+
+  <ion-row class="ion-align-items-center">
+    <ion-col size="12"  class="fonts-sub ion-text-center">
+      {{"initPageTitle"| translate}}
+    </ion-col>
+
+    <ion-col size="12" class="center-div ion-margin-top">
+
+
+      <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+        <ion-input class="authInput  ion-margin-bottom" [placeholder]="'auth-name' | translate" type="name"
+          formControlName="name" aria-label="name" appUserName>
+        </ion-input>
+        <ion-input class="authInput  ion-margin-bottom" [placeholder]="'auth-surname' | translate" type="surname"
+          formControlName="surname" aria-label="surname" appUserName>
+        </ion-input>
+        <ion-input class="authInput  ion-margin-bottom" [placeholder]="'auth-email' | translate" type="email"
+          formControlName="email" aria-label="email">
+        </ion-input>
+        <ion-input class="authInput  ion-margin-bottom" [placeholder]="'auth-password' | translate" type="password"
+          formControlName="password" aria-label="password">
+        </ion-input>
+        <ion-button expand="block" type="submit" class="auth-button">{{"auth-signUp" | translate}}</ion-button>
+      </form>
+
+
+    </ion-col>
+    <ion-col size="12" class="center-div fonts-sub-small" (click)="goLogin()">
+      {{"goLogin" | translate}}
+    </ion-col>
+    <!--
+      set the language
+        <ion-col size="12" size-xs="12" size-sm="12" size-md="12" size-lg="12" class="center-div">
+      <app-card type="language" (jobIsDone)="LanguageIsDone()"></app-card>
+    </ion-col> 
+    
+    -->
+  </ion-row>
+</ion-grid>

@@ -1,35 +1,37 @@
 import { NgModule } from '@angular/core';
-import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-import {welcomeGuardGuard} from './welcome-guard.guard'
+import { RouterModule, Routes } from '@angular/router';
+import {userLanguageGuard} from './core/guards/user-language-controll/user-language.guard'
 
 const routes: Routes = [
   {
-    path: 'inicial-page',
-    loadChildren: () => import('./inicial-page/inicial-page.module').then( m => m.InicialPagePageModule),
-    canActivate:[welcomeGuardGuard]
+    path: 'Auth',
+    loadChildren: () => import('./features/auth/auth.module').then( m => m.AuthPageModule),
+    canActivate:[userLanguageGuard]
   },
   {
     path: 'dashboard',
-    loadChildren: () => import('./dashboard/dashboard.module').then( m => m.DashboardPageModule)
+    loadChildren: () => import('./features/dashboard/dashboard.module').then( m => m.DashboardPageModule)
   },
   {
     path: 'settings',
-    loadChildren: () => import('./settings/settings.module').then( m => m.SettingsPageModule)
+    loadChildren: () => import('./features/settings/settings.module').then( m => m.SettingsPageModule)
   },
   {
     path: 'play-deck',
-    loadChildren: () => import('./play-deck/play-deck.module').then( m => m.PlayDeckPageModule)
+    loadChildren: () => import('./features/play-deck/play-deck.module').then( m => m.PlayDeckPageModule)
   },
   {
     path: '',
-    redirectTo: 'inicial-page',
+    redirectTo: 'Auth',
     pathMatch: 'full'
   },
+
+ 
 ];
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
+    RouterModule.forRoot(routes) 
   ],
   exports: [RouterModule]
 })

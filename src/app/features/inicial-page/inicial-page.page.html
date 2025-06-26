@@ -1,0 +1,38 @@
+
+
+<ion-content [fullscreen]="true" class="content">
+  
+  <div class="center-div-100"
+  [@fadeOut]="!showContent ? 'hidden' : 'visible'"
+    >
+    <ion-grid>
+      <ion-row class="ion-align-items-center">
+        <ion-col size="6" 	size-xs="4" size-sm="3" size-md="1" size-lg="5" class="ion-text-end" >
+          <img alt="flipLogo" src="assets/icon.png" class="blogo" />
+        </ion-col>
+        <ion-col size="7" size-xs="8" size-sm="9" size-md="11" size-lg="6" class="fonts" 
+        [appWordAnimation]="appWordAnimation" [timing]="timing">
+        </ion-col> 
+      </ion-row>
+    </ion-grid>
+  </div>
+  <ion-grid class="center-div">
+    <ion-row class="ion-align-items-center">
+      <ion-col size="12" size-xs="12" size-sm="12" size-md="12" size-lg="12" class="fonts-sub ion-text-center">
+        {{"initPageTitle"| translate}}
+      </ion-col>
+      <!--set user name     
+      -->
+      <ion-col *ngIf="!setUser" size="12" size-xs="12" size-sm="12" size-md="12" size-lg="12" 
+      class="center-div">
+      <app-set-user  *ngIf="!showContent"  (usernameSelected)="UserIsDone()" ></app-set-user>
+      </ion-col>
+      <!-- set the language -->
+      <ion-col size="12"  *ngIf="setUser" size-xs="12" size-sm="12" size-md="12" size-lg="12"
+        class="center-div">
+        <app-card type="language"  (jobIsDone)="LanguageIsDone()"></app-card>
+      </ion-col>    
+    </ion-row>
+  </ion-grid>
+</ion-content>
+

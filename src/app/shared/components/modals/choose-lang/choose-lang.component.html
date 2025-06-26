@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title *ngIf="type=='mainLanguage'">{{'language-popup.header' | translate}} </ion-title>
+    <ion-title *ngIf="type=='newLanguage'">{{'language-popup.header-learn' | translate}} </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="cancel()" >
+        <img  src="assets/icon/close.png" width="15" alt="close modal">
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <ion-radio-group (ionChange)="changeLang($event)" [(ngModel)]="currentLang" >
+    <ion-item *ngFor="let language of availableLanguages" class="ion-padding-bottom">
+      <ion-avatar slot="start">
+        <img alt="Silhouette of a person's head" src="{{ 'assets/lang/lang-' + language + '.svg' }}" />
+      </ion-avatar>
+      <ion-label class="ion-text-center">{{'languages.' + language | translate}}</ion-label>
+      
+      <ion-radio slot="end" value="{{language}}" aria-label="Option Label"></ion-radio>
+    </ion-item>
+  </ion-radio-group>
+</ion-content>

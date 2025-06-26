@@ -1,0 +1,33 @@
+.logo {
+    max-height: 50px;
+  }
+
+.blogo {
+    max-height: 30vh;
+  }
+
+
+
+
+  ion-content.content {
+  --background: #5ce1e6;
+
+  }
+
+  ion-content.content::part(scroll) {
+    overflow-y: hidden !important; /* Or any value you want */
+    overscroll-behavior-y: none !important; /* Modify as needed */
+}
+
+  
+  .centered-container {
+    display: flex;
+    align-items: center; /* Vertical alignment */
+    justify-content: center; /* Horizontal alignment */
+   
+  }
+
+
+
+
+  

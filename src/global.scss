@@ -44,7 +44,7 @@
     font-style: normal;  /* Adjust as needed */
   }
 
-   .center-div {
+   .center-div-100 {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -52,6 +52,42 @@
     height: 100%;
   }
 
+  
+
+  .center-Left {
+    display: flex;
+    justify-content: start;
+    align-content: center;
+    align-items:center;
+    height: 100%;
+  }
+
+
+  
+
+  .center-div-80{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 80%;
+  }
+
+  .center-div{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+
+  .center-div-auth-childs{
+  display: flex;
+  flex-direction: column; /* Ensure content flows vertically */
+  justify-content: flex-start; /* Start content from the top */
+  align-items: center; /* Keep horizontal centering */
+  padding-top: 10px; /* Optional: Add some spacing */
+  margin-top:40%
+  }
 
   .flip-effect {
   display: inline-block;
@@ -72,3 +108,117 @@
     opacity: 1;
   }
 }
+
+.inable-item{
+  opacity: 0.4;
+}
+
+.nextButton-icon{
+  font-size: 50px;
+  color: rgb(191, 113, 223);
+  font-weight: 600;
+}
+
+.customButton{
+  
+  width: 100%;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'CustomFontName', sans-serif;
+}
+
+.fonts{
+  font-size: 50px;
+  font-family: 'CustomFontName', sans-serif; /* Add a fallback font */
+  color: rgb(191, 113, 223);
+}
+
+.fonts-sub{
+  font-size: 35px;
+  font-family: 'CustomFontName', sans-serif; /* Add a fallback font */
+  color: rgb(191, 113, 223);
+}
+
+.fonts-sub-alter{
+  font-size: 35px;
+  font-family: 'CustomFontName', sans-serif; /* Add a fallback font */
+  color: #5ce1e6;;
+}
+
+
+.fonts-sub-small{
+  font-size: 15px;
+  font-family: 'CustomFontName', sans-serif; /* Add a fallback font */
+  color: rgb(191, 113, 223);
+}
+.changeLanguageModal
+{
+  align-items: center;
+  justify-content: center; 
+  &::part(content){
+background-color: red;
+  }
+}
+
+.authInput {
+  background-color: rgba(192, 113, 223, 0.184);
+  color: black;
+  font-size: 25px;
+  font-weight: 500;
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+}
+
+
+.authInput input {
+  padding-left: 5px !important; 
+}
+
+
+.logo {
+  max-height: 50px;
+}
+
+.blogo {
+  max-height: 30vh;
+}
+
+ion-content.content {
+--background: #5ce1e6;
+
+}
+
+ion-content.content {
+  --offset-top: 15%; /* Match the .final-logo-style height */
+  padding-top: var(--offset-top);
+}
+
+ion-button.auth-button{
+  --background:rgba(192, 113, 223, 0.825);
+  color:  #5ce1e6;
+}
+
+.final-logo-style {
+  transform: scale(0.4);
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ion-content.content::part(scroll) {
+  overflow-y: hidden !important; /* Or any value you want */
+  overscroll-behavior-y: none !important; /* Modify as needed */
+}
+
+
+
+@media (min-width: 768px) {
+  .fonts{
+     font-size: 85px;
+  }
+  .fonts{
+    font-size: 50px;
+ }
+   } 

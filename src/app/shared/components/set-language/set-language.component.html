@@ -1,0 +1,34 @@
+
+<ion-grid class="center-div">
+  <ion-row >
+    <ion-col size="12" class="fonts-sub ion-text-center">
+      <ng-container *ngIf="user$ | async as gUser">
+        {{title}}
+      </ng-container>
+    </ion-col>
+    <ion-col size="12" >
+     
+  <ion-radio-group [(ngModel)]="getLang" class="language-section">
+    <ion-item *ngFor="let item of languages" lines="none" 
+    [ngClass]="item==getLang?'lang-custom-item-selected':'lang-custom-item'"
+    >
+      <ion-radio slot="start" [value]="item"></ion-radio>
+      <ion-label 
+      [ngClass]="item==getLang?'language-label-selected':'language-label'"
+       >
+        <img 
+          [src]="'assets/lang/lang-' + item.code + '.svg'" 
+          alt="flag-image" 
+          class="image-avatar" />
+        {{ item.label }}
+      </ion-label>
+    </ion-item>
+  </ion-radio-group>
+  <ion-icon size="12" class="ion-margin-top"></ion-icon>
+  <ion-button expand="block"  class="auth-button"
+  (click)="complete()"
+  >{{"Comfirm" | translate}}</ion-button>
+    </ion-col>  
+  </ion-row>
+  
+</ion-grid>

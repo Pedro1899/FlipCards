@@ -1,0 +1,48 @@
+<ion-row>
+  <ion-col size="12" class="center-div">
+     <div class="flip-container" [class.flipped]="isFlipped" (click)="flipCard()">
+    <div class="flipper">
+      <!-- Front Side -->
+      <div class="front">
+        <ion-card *ngIf="type=='language'" class="card-f">
+          <ion-card-header>
+            <ion-card-title class="fonts-sub-alter"> {{"myLanguage"| translate}}  </ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <app-set-language  type='mainLanguage' ></app-set-language>            
+          </ion-card-content>
+        </ion-card>
+
+      </div>
+      
+      <!-- Back Side -->
+      <div class="back">
+        <ion-card *ngIf="type=='language'"  class="card-b">
+          <ion-card-header>
+            <ion-card-title class="fonts-sub"> {{"LanguageToLearn"| translate}}  </ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <app-set-language type="newLanguage"></app-set-language>    
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card *ngIf="type=='word'" class="card-b">
+          <ion-card-content>
+            HI      
+          </ion-card-content>
+        </ion-card>
+      </div>
+    </div>
+  </div>
+  </ion-col>
+  <ion-col size="12"  class="ion-text-center ion-margin-top">
+<app-custom-button 
+[validButton]="validNext" icon="arrow-forward-circle-outline"
+  class="nextButton-icon"
+  (clicked)="completeLanguage()"
+></app-custom-button>
+  </ion-col>
+</ion-row>
+ 
+
+   
