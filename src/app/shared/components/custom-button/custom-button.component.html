@@ -1,19 +1,11 @@
-
-<!--
-<ion-button [disabled]="!validButton" class="customButton " 
-(click)="click()"
->
-  
+<ion-button *ngIf="icon" class="transparent indigo center-div">
+  <ion-col  class="custom-col" size="3">
+    <ion-icon [name]="icon" class="icon"></ion-icon>
+  </ion-col> 
+  <ion-col  class="custom-col ion-text-left" size="9" >{{text}}</ion-col> 
 </ion-button>
--->
 
-<ion-icon [ngClass]="{ 'inable-item':!validButton }" [class]="class" [name]="icon"
-    (click)="click()"></ion-icon>
-
-<!--
-
-<ion-icon [ngClass]="{ 'inable-item':!validButton }" [class]="class" [name]="icon"
-(click)="click()"></ion-icon>
-
--->
+<ion-button *ngIf="!icon" class="transparent indigo center-div">
+  {{text}}
+</ion-button>
 

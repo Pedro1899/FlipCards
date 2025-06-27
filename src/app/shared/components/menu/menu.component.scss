@@ -1,0 +1,44 @@
+
+
+  ion-menu-button.custom-menu-button {
+    --color: rgba(192, 113, 223, 0.825);
+
+  }
+  
+
+  .headerMenu{
+    --width:200px;
+  }
+
+
+  .custom-header-toolbar {
+    --background: #5ce1e6;
+    color: white; // optional: set text/icon color
+  }
+  
+  .classymenu {
+    --ion-background-color: #5ce1e6;
+    transition: transform 2s ease-in-out;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.033); /* Shadow for menu */
+    --width: 70%; /* Menu width */
+    overflow: hidden; /* Disable scrolling */
+    color: #fff; /* Text color */
+    overflow-y: hidden !important;
+  }
+  
+  .classymenu ion-col {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0; /* Padding for columns */
+    margin-bottom: 0.2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    
+  }
+  
+
+  .footer-icon{
+    font-size: 30px;
+    color: rgb(186, 186, 255);
+    }
+    

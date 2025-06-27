@@ -12,11 +12,10 @@ export const userLanguageGuard: CanActivateFn = async (route, state) => {
 
     if (userInfo && language) {
       await router.navigate(['/dashboard']);
-      return false; // Block access to inicial-page
+      return false; 
     }
-    return true; // Allow access
+    return true; 
   } catch (error) {
-    // Optionally redirect to an error page or allow access
-    return true; // Fallback to allow access (adjust based on requirements)
+    return true; 
   }
 };

@@ -17,6 +17,8 @@ export class DashboardPage implements OnInit {
     private storage: LocalStorageService
   ) { }
   getMessage:Message | undefined 
+  appWordAnimation = [ 'Flips']
+  timing = 1500
   ngOnInit() {
   console.log("dashboard")
  //this.aiService.getOneDeck("Parts of the body").subscribe(

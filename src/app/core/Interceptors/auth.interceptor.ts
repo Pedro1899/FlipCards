@@ -25,6 +25,7 @@ export const authInterceptor: HttpInterceptorFn = (req, next) => {
     switchMap(user => {
       // Add token to headers if user exists and URL is not excluded
       let modifiedReq = req;
+
       if (user && !shouldSkip) {
         modifiedReq = req.clone({ setHeaders: { Authorization: `Bearer ${user.token}` } });
       }

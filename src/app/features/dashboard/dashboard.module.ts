@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import {SharedModule} from '../../shared/shared.module'
 import { IonicModule } from '@ionic/angular';
+import { InitpageComponent } from './components/initpage/initpage.component';
 
 import { DashboardPageRoutingModule } from './dashboard-routing.module';
 
@@ -16,6 +17,6 @@ import { DashboardPage } from './dashboard.page';
     DashboardPageRoutingModule, 
     SharedModule
   ],
-  declarations: [DashboardPage]
+  declarations: [DashboardPage, InitpageComponent ]
 })
 export class DashboardPageModule {}

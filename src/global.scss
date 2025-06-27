@@ -128,7 +128,7 @@
 }
 
 .fonts{
-  font-size: 50px;
+  font-size: 40px;
   font-family: 'CustomFontName', sans-serif; /* Add a fallback font */
   color: rgb(191, 113, 223);
 }
@@ -183,10 +183,12 @@ background-color: red;
 .blogo {
   max-height: 30vh;
 }
+.blogo-small {
+  max-height: 20vh;
+}
 
 ion-content.content {
 --background: #5ce1e6;
-
 }
 
 ion-content.content {

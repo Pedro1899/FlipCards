@@ -12,6 +12,8 @@ import {ChooseLangComponent} from './components/modals/choose-lang/choose-lang.c
 import {CustomButtonComponent} from './components/custom-button/custom-button.component'
 import {SetLanguageComponent} from './components/set-language/set-language.component'
 import {FooterComponent} from './components/footer/footer.component'
+import {MenuComponent} from './components/menu/menu.component'
+import {LogoComponent} from './components/logo/logo.component'
 import {UserNameDirective} from './directives/userName/user-name.directive'
 import {WordAnimationDirective} from './directives/word-flip-effect/word-animation.directive'
 
@@ -22,7 +24,10 @@ import {WordAnimationDirective} from './directives/word-flip-effect/word-animati
     SetLanguageComponent, 
     ChooseLangComponent,
     CustomButtonComponent, 
-    FooterComponent
+    FooterComponent,
+    MenuComponent,
+    LogoComponent,
+
   ],
   imports: [
     CommonModule,
@@ -45,6 +50,8 @@ import {WordAnimationDirective} from './directives/word-flip-effect/word-animati
     SetLanguageComponent, 
     ChooseLangComponent,
     FooterComponent,
+    MenuComponent,
+    LogoComponent,
     CustomButtonComponent]
 })
 export class SharedModule { }
