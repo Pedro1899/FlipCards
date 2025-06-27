@@ -5,19 +5,39 @@
 
 .transparent{
     --background:transparent;
+    --box-shadow: none;
+    box-shadow: none !important;
     font-size: 14px;
     font-weight: 800;
     font-style: oblique;
    border-radius: 20px;
    width: auto;
     padding: 0 !important;
-    height: 30px !important;
+    
   }
 
   .indigo{
     border: 2px solid rgba(192, 113, 223, 0.328);;
      color: rgb(191, 113, 223);;
   }
+
+
+
+ion-button.transparent:active,
+ion-button.transparent:hover,
+ion-button.transparent:focus {
+  --box-shadow: none;
+  box-shadow: none !important;
+}
+
+
+ion-button.transparent {
+  --background-activated: transparent;
+  --background-focused: transparent;
+  --background-hover: transparent;
+  --border-radius: 20px; 
+  overflow: hidden;   
+}
 
   .icon{
 font-size: 20px;
