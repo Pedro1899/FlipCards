@@ -1,4 +1,6 @@
-<ion-button *ngIf="icon" class="transparent indigo center-div">
+<ion-button *ngIf="icon" class="transparent indigo center-div" 
+[ngClass]="border?'border-indigo':''"
+>
   <ion-col  class="custom-col" size="3">
     <ion-icon [name]="icon" class="icon"></ion-icon>
   </ion-col> 

@@ -24,9 +24,13 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'Auth',
+    redirectTo: 'dashboard',
     pathMatch: 'full'
   },
+  {
+    path: '**', 
+    redirectTo: 'dashboard' 
+  }
 
  
 ];

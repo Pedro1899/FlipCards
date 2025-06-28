@@ -7,11 +7,11 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
   standalone:false
 })
 export class CustomButtonComponent  implements OnInit {
-@Input() validButton:boolean=false 
+
 @Input() icon?:string="" 
-@Input() text?:string="" 
-@Input() class:string=""
-@Input() buttonClass:string=""
+@Input() text?:string=""
+@Input() border?:boolean
+
 
 @Output() clicked = new EventEmitter<void>();
   constructor() { }

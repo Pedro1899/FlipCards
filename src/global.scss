@@ -63,6 +63,21 @@
   }
 
 
+  .center-Left-0h {
+    display: flex;
+    justify-content: start;
+    align-content: center;
+    align-items:center;
+  }
+
+  .center-right-0h {
+    display: flex;
+    justify-content: end;
+    align-content: center;
+    align-items:center;
+  }
+
+
   
 
   .center-div-80{
@@ -185,6 +200,9 @@ background-color: red;
 }
 .blogo-small {
   max-height: 20vh;
+}
+.blogo-xsmall {
+  max-height: 7vh;
 }
 
 ion-content.content {

@@ -5,23 +5,9 @@ class="center-div-100"
 >
 <ion-grid>
   <app-logo [getWords]="appWordAnimation" [getTiming]="timing"></app-logo>
-  <!--
-    <ion-row class="ion-align-items-center">
-    <ion-col size="6" class="ion-text-end">
-      <img alt="flipLogo" src="assets/icon.png" class="blogo" />
-    </ion-col>
-    <ion-col size="6" class="fonts" 
-      [appWordAnimation]="appWordAnimation" 
-      [timing]="timing"
-    >
-    </ion-col> 
-  </ion-row>
-  -->
-
 </ion-grid>
 </div>
 
-<!-- Always show the final logo style after fadeOut or on other routes -->
 <div *ngIf="showFinalState || !isAuthRoot" class="final-logo-style">
 
   <ion-grid>

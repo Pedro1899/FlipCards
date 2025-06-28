@@ -26,19 +26,80 @@
     overflow-y: hidden !important;
   }
   
+
+  .menu-icon {
+    font-size: 20px;
+    padding-left: 15px;
+    padding-right: 10px;
+  }
+
   .classymenu ion-col {
     display: flex;
     align-items: center;
     padding: 0.5rem 0; /* Padding for columns */
-    margin-bottom: 0.2rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-bottom: 0.5rem;
     
   }
   
+.menu-item-description{
+  color:  rgba(192, 113, 223, 0.906);
+  font-size: 12px;
+  font-weight: 700;
+
+  padding-left: 10px;
+}
+  
+  .item-icon{
+    font-size: 20px;
+    color:  rgba(192, 113, 223, 0.878);
+    margin-left: 15px;
+    }
+
+    .item-icon{
+      font-size: 20px;
+      color:  rgba(192, 113, 223, 0.825);
+      margin-left: 15px;
+      }
+
+ .avatar{
+      size: 20px;
+      background-color: gray;
+      color: black
+    }
+    
 
   .footer-icon{
     font-size: 30px;
     color: rgb(186, 186, 255);
     }
-    
+
+
+   .border{
+border: 1px solid red;
+   }
+
+   .active-menu{
+border-radius: 20px;   
+background-color: rgba(128, 128, 128, 0.084);
+   }
+
+   .subMenu{
+    margin-left: 35px;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    border-left: 0.5px solid rgba(185, 185, 185, 0.951);
+    animation: slideDownFadeIn 0.5s forwards; 
+   }
+
+
+
+@keyframes slideDownFadeIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Move to original position */
+  }
+}

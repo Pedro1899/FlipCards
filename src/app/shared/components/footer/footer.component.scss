@@ -1,19 +1,28 @@
 .footer-icon{
-font-size: 30px;
-color: rgb(186, 186, 255);
+font-size: 33px;
 }
+.footer-icon-exit{
+  font-weight: 800;
+  font-size: 25px;
+  transform: rotate(90deg);
+}
+
+.color{color: rgba(192, 113, 223, 0.825);}
 
 
 .custom-footer ion-toolbar {
-    height: 80px; /* Set desired height (e.g., 80px for a taller footer) */
-    min-height: 80px; /* Ensure it doesn't shrink */
-    --min-height: 80px; /* Override Ionic's default variable */
-    display: flex;
-    align-items: center; /* Vertically center content */
+ 
+    --background: transparent
   }
   
-  /* Optional: Center content vertically within ion-row */
+
   .custom-footer .ion-row {
-    height: 100%; /* Use full height of toolbar */
-    align-items: center; /* Vertically center columns */
+    height: 100%; 
+    align-items: center; 
   }
+
+
+.footer-ios ion-toolbar:first-of-type {
+  --border-width: 0 !important
+}
+

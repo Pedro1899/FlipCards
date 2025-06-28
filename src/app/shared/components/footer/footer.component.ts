@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-footer',
@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
   standalone: false
 })
 export class FooterComponent  implements OnInit {
-
+ @Output() exit = new EventEmitter<boolean>();
+ @Output() profile = new EventEmitter<boolean>();
   constructor() { }
 
   ngOnInit() {}
+
+  click_exit(){
+    this.exit.emit(true)
+  }
+
+  click_profile(){
+    this.profile.emit(true)
+  }
 
 }

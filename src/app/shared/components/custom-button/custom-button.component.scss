@@ -11,15 +11,21 @@
     font-weight: 800;
     font-style: oblique;
    border-radius: 20px;
-   width: auto;
+   width: 100%;
     padding: 0 !important;
+    height: 35px;
     
   }
 
   .indigo{
-    border: 2px solid rgba(192, 113, 223, 0.328);;
      color: rgb(191, 113, 223);;
+    
   }
+
+  .border-indigo{
+    border: 2px solid rgba(192, 113, 223, 0.328);;
+  }
+
 
 
 
